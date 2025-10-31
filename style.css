@@ -12,10 +12,12 @@
 /* Base styles */
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  /* Use a modern Google font for a clean corporate feel */
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   color: var(--text-dark);
   line-height: 1.6;
   background-color: #fff;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -92,9 +94,14 @@ nav ul li a:hover {
 /* Hero section */
 .hero {
   text-align: center;
-  padding: 4rem 1rem;
-  background: linear-gradient(to right, var(--primary), #002760);
+  padding: 6rem 1rem;
+  /* Soften the hero with a smooth diagonal gradient */
+  background: linear-gradient(135deg, var(--primary) 0%, #012f7a 50%, #001e4f 100%);
   color: #fff;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero h1 {
@@ -131,6 +138,11 @@ section {
   padding: 3rem 1rem;
 }
 
+/* Alternate background colours for better visual rhythm */
+section:nth-of-type(even) {
+  background-color: var(--light-bg);
+}
+
 h2 {
   text-align: center;
   margin-bottom: 1.5rem;
@@ -147,16 +159,17 @@ h2 {
 }
 
 .service-card {
-  background-color: var(--light-bg);
+  background-color: #fff;
   padding: 2rem 1rem;
   text-align: center;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .service-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
 .service-card i {
@@ -191,7 +204,7 @@ h2 {
 
 .process-timeline .timeline-step {
   text-align: center;
-  background-color: var(--light-bg);
+  background-color: #fff;
   padding: 1rem;
   border-radius: 50%;
   width: 80px;
@@ -200,13 +213,19 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .process-timeline .timeline-step span {
   font-size: 1.2rem;
   font-weight: bold;
   color: var(--primary);
+}
+
+.process-timeline .timeline-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
 .process-timeline .timeline-step p {
@@ -226,15 +245,16 @@ h2 {
 
 .benefit {
   text-align: center;
-  background-color: var(--light-bg);
+  background-color: #fff;
   padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .benefit:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
 .benefit i {
