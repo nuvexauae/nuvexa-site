@@ -93,15 +93,19 @@ nav ul li a:hover {
 
 /* Hero section */
 .hero {
-  text-align: center;
-  padding: 6rem 1rem;
-  /* Soften the hero with a smooth diagonal gradient */
-  background: linear-gradient(135deg, var(--primary) 0%, #012f7a 50%, #001e4f 100%);
-  color: #fff;
-  min-height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    text-align: center;
+    padding: 6rem 1rem;
+    color: #fff;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 34, 102, 0.8), rgba(0, 8, 41, 0.8)), url('https://images.unsplash.com/photo-1718289518008-2a6e78a87488?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+
 }
 
 .hero h1 {
@@ -110,8 +114,9 @@ nav ul li a:hover {
 }
 
 .hero p {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
 }
 
 .hero-buttons {
